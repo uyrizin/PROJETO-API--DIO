@@ -1,17 +1,9 @@
-﻿namespace projeto_api.Controllers.Entitys
+namespace projeto_api.Controllers.Entitys;
+
+public class Contatos
 {
-    public class Contatos
-    {
-
-        public int Id { get; set; }
-        public string nome  { get; set; }
-        public string telefone { get; set; }
-        public bool Ativo { get; set; }
-
-
-
-
-    }
+    public int Id { get; set; }
+    public string nome { get; set; } = string.Empty;
+    public string telefone { get; set; } = string.Empty;
+    public bool Ativo { get; set; }
 }
-
- 
