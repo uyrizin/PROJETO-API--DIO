@@ -1,6 +1,35 @@
 @projeto_api_HostAddress = http://localhost:5288
 
-GET {{projeto_api_HostAddress}}/weatherforecast/
+GET {{projeto_api_HostAddress}}/api/contatos
 Accept: application/json
 
 ###
+
+GET {{projeto_api_HostAddress}}/api/contatos/1
+Accept: application/json
+
+###
+
+POST {{projeto_api_HostAddress}}/api/contatos
+Content-Type: application/json
+
+{
+  "nome": "Yuri Higa",
+  "telefone": "(00) 00000-0000",
+  "ativo": true
+}
+
+###
+
+PUT {{projeto_api_HostAddress}}/api/contatos/1
+Content-Type: application/json
+
+{
+  "nome": "Yuri Higa",
+  "telefone": "(00) 99999-9999",
+  "ativo": true
+}
+
+###
+
+DELETE {{projeto_api_HostAddress}}/api/contatos/1
